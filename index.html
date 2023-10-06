@@ -1,13 +1,295 @@
-<doctype html>
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport"content="width=device-width,initial-scale=1.0">
-<title>online order</title>
-<link rel="stylesheet"href="hello.css">
+    <style>
+       body {
+            text-align: center;
+        }
+        .year-box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #c46bff, #3f8aedcd);
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .branch-list {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: grey;
+            border: 1px solid #ccc;
+            width: 200px;
+            z-index: 1;
+        }
+        .year-box:hover .branch-list {
+            display: block;
+        }
+        .branch-item {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .branch-item:hover .sub-branch-list {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: linear-gradient(45deg, #c46bff, #3f8aedcd);
+            border: 1px solid #ccc;
+            width: 150px;
+            z-index: 1;
+        }
+
+        .sub-branch-list {
+        display: none;
+        margin-top: 5px;
+        max-height: 700px; /* Set the maximum height for the list */
+        overflow-y: auto;
+        }
+
+        .sub-branch-item {
+            padding: 3px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<h1>online order form</h1>
-<from id ="online order-form">
-<label
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><p style="color:green">SR UNIVERSITY</h1>
+        <h2><p style="color:orange">DEPARTMENT OF CS&AI</h2>
+        <h3><p style="color:blue">INDIVIDUAL TIME-TABLES</h3>
+    </div> 
+<div class="year-box">
+        1st year
+        <div class="branch-list">
+            <div class="branch-item">
+                CSE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">CSE-A</div>
+                    <div class="sub-branch-item">CSE-B</div>
+                    <div class="sub-branch-item">CSE-C</div>
+                    <div class="sub-branch-item">CSE-D</div>
+                    <div class="sub-branch-item">CSE-E</div>
+                    <div class="sub-branch-item">CSE-F</div>
+                    <div class="sub-branch-item">CSE-G</div>
+                    <div class="sub-branch-item">CSE-H</div>
+
+                </div>
+            </div>
+            <div class="branch-item">
+                ECE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">ECE-A</div>
+                    <div class="sub-branch-item">ECE-B</div>
+                    <div class="sub-branch-item">ECE-C</div>
+                    <div class="sub-branch-item">ECE-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Civil
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Civil-A</div>
+                    <div class="sub-branch-item">Civil-B</div>
+                    <div class="sub-branch-item">Civil-C</div>
+                    <div class="sub-branch-item">Civil-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Mech
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Mech-A</div>
+                    <div class="sub-branch-item">Mech-B</div>
+                    <div class="sub-branch-item">Mech-C</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                EEE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">EEE-A</div>
+                    <div class="sub-branch-item">EEE-B</div>
+                    <div class="sub-branch-item">EEE-C</div>
+                    <div class="sub-branch-item">EEE-D</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="year-box">
+        2nd year
+        <div class="branch-list">
+            <div class="branch-item">
+                CSE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-A.html">2-CSE-A</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-B.html">2-CSE-B</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-C.html">2-CSE-C</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-D.html">2-CSE-D</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-E.html">2-CSE-E</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-F.html">2-CSE-F</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-G.html">2-CSE-G</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-H.html">2-CSE-H</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-I.html">2-CSE-I</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-J.html">2-CSE-J</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-K.html">2-CSE-K</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-L.html">2-CSE-L</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-M.html">2-CSE-M</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-N.html">2-CSE-N</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2-CSE-O.html">2-CSE-O</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-A-1.html">2-CSE-AIML-A</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-B.html">2-CSE-AIML-B</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-C.html">2-CSE-AIML-C</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-D.html">2-CSE-AIML-D</a></div>
+                    <div class="sub-branch-item"><a href="http://sru.42web.io/wp-content/uploads/2023/08/2-CSE-DSCS.html">2-CSE-DSCS</a></div>          
+                </div>
+            </div>
+            <div class="branch-item">
+                ECE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">ECE-A</div>
+                    <div class="sub-branch-item">ECE-B</div>
+                    <div class="sub-branch-item">ECE-C</div>
+                    <div class="sub-branch-item">ECE-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Civil
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Civil-A</div>
+                    <div class="sub-branch-item">Civil-B</div>
+                    <div class="sub-branch-item">Civil-C</div>
+                    <div class="sub-branch-item">Civil-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Mech
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Mech-A</div>
+                    <div class="sub-branch-item">Mech-B</div>
+                    <div class="sub-branch-item">Mech-C</div>
+                    <div class="sub-branch-item">Mech-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                EEE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">EEE-A</div>
+                    <div class="sub-branch-item">EEE-B</div>
+                    <div class="sub-branch-item">EEE-C</div>
+                    <div class="sub-branch-item">EEE-D</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="year-box">
+        3rd year
+        <div class="branch-list">
+            <div class="branch-item">
+                CSE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">CES-A</div>
+                    <div class="sub-branch-item">CES-B</div>
+                    <div class="sub-branch-item">CES-C</div>
+                    <div class="sub-branch-item">CES-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                ECE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">ECE-A</div>
+                    <div class="sub-branch-item">ECE-B</div>
+                    <div class="sub-branch-item">ECE-C</div>
+                    <div class="sub-branch-item">ECE-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Civil
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Civil-A</div>
+                    <div class="sub-branch-item">Civil-B</div>
+                    <div class="sub-branch-item">Civil-C</div>
+                    <div class="sub-branch-item">Civil-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Mech
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Mech-A</div>
+                    <div class="sub-branch-item">Mech-B</div>
+                    <div class="sub-branch-item">Mech-C</div>
+                    <div class="sub-branch-item">Mech-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                EEE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">EEE-A</div>
+                    <div class="sub-branch-item">EEE-B</div>
+                    <div class="sub-branch-item">EEE-C</div>
+                    <div class="sub-branch-item">EEE-D</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="year-box">
+        4th year
+        <div class="branch-list">
+            <div class="branch-item">
+                CSE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">CES-A</div>
+                    <div class="sub-branch-item">CES-B</div>
+                    <div class="sub-branch-item">CES-C</div>
+                    <div class="sub-branch-item">CES-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                ECE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">ECE-A</div>
+                    <div class="sub-branch-item">ECE-B</div>
+                    <div class="sub-branch-item">ECE-C</div>
+                    <div class="sub-branch-item">ECE-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Civil
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Civil-A</div>
+                    <div class="sub-branch-item">Civil-B</div>
+                    <div class="sub-branch-item">Civil-C</div>
+                    <div class="sub-branch-item">Civil-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                Mech
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">Mech-A</div>
+                    <div class="sub-branch-item">Mech-B</div>
+                    <div class="sub-branch-item">Mech-C</div>
+                    <div class="sub-branch-item">Mech-D</div>
+                </div>
+            </div>
+            <div class="branch-item">
+                EEE
+                <div class="sub-branch-list">
+                    <div class="sub-branch-item">EEE-A</div>
+                    <div class="sub-branch-item">EEE-B</div>
+                    <div class="sub-branch-item">EEE-C</div>
+                    <div class="sub-branch-item">EEE-D</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+</div>
+</body>
+</html>
